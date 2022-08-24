@@ -1,0 +1,26 @@
+public class desafio {
+    public static void main(String[] args) {
+       Scanner entrada = new Scanner(System.in);
+       
+       int ducks = 0;
+       int rabits = 0;
+       int patas = 0;
+       int head = 0;
+       System.out.println("Quantos patos vós possui em seu cercado?");
+       ducks = entrada.nextInt();
+       System.out.println("Quantos coelhos vós possui em seu cercado?");
+       rabits = entrada.nextInt();
+       
+       patas = patas + (ducks*2);
+       patas = patas + (rabits*4);
+       
+       head = (ducks + rabits );
+       
+       System.out.println("Em seu cercado você possuí: "+ducks+" patos. ");
+       System.out.println("Em seu cercado você possuí: "+rabits+" coelhos. ");
+       System.out.println("Em seu cercado você possuí: "+patas+" patas. ");
+       System.out.println("Em seu cercado você possuí: "+head+" cabeças. ");
+  
+       
+    }
+}
