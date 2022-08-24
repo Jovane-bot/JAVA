@@ -1,0 +1,17 @@
+public class atv5 {
+    public static void main(String[] args) {
+       Scanner entrada = new Scanner(System.in);
+       int carros = 0;
+       double money = 1000.00;
+       
+       System.out.println("quantos carros você vendeu meu nobre?");
+       carros = entrada.nextInt();
+       if (carros < 5) {
+           money = carros * 500.00;
+       }
+       if (carros > 5){
+           money = carros * 1000.00;
+       }
+       System.out.println("parabéns guerreiro você recebeu: "+money+" dinheiros. clap clap." );
+    }
+}
